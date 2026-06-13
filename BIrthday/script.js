@@ -201,7 +201,7 @@ heart.remove();
 
 }
 
-setInterval(createHeart,1200);
+setInterval(createHeart,700);
 
 
 
@@ -235,7 +235,7 @@ butterfly.remove();
 
 }
 
-setInterval(createButterfly,2500);
+setInterval(createButterfly,1500);
 
 
 
@@ -267,7 +267,8 @@ petal.remove();
 
 }
 
-setInterval(createPetal,1800);
+setInterval(createPetal,1000);
+
 
 
 
@@ -290,5 +291,29 @@ document.querySelector(".countdown-section")
 </h1>
 
 `;
+
+}
+
+for(let i=0;i<15;i++){
+
+setTimeout(()=>{
+createHeart();
+},i*300);
+
+}
+
+for(let i=0;i<8;i++){
+
+setTimeout(()=>{
+createButterfly();
+},i*500);
+
+}
+
+for(let i=0;i<10;i++){
+
+setTimeout(()=>{
+createPetal();
+},i*400);
 
 }
