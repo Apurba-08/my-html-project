@@ -27,6 +27,18 @@ overflow:hidden;
 z-index:1;
 }
 
+.countdown-card,
+.birthday-card,
+.glass-card,
+.gallery,
+.letter,
+.surprise{
+
+position:relative;
+z-index:10;
+
+}
+
 /* COUNTDOWN SCREEN */
 
 #countdown-screen{
@@ -186,15 +198,41 @@ height:550px;
 margin:auto;
 overflow:hidden;
 border-radius:25px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
 }
 
-.slide{
+/* .slide{
 position:absolute;
 width:100%;
 height:100%;
-object-fit:cover;
+object-fit:contain;
 opacity:0;
 transition:.8s;
+} */
+
+.slide{
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+max-width:100%;
+max-height:100%;
+
+width:auto;
+height:auto;
+
+object-fit:contain;
+object-position:center center;
+
+opacity:0;
+transition:opacity .8s ease;
 }
 
 .slide.active{
@@ -353,7 +391,8 @@ font-size:2rem;
 }
 
 .slider{
-height:350px;
+width:95%;
+height:450px;
 }
 
 .time-box span{
@@ -380,7 +419,7 @@ padding:25px;
 }
 
 .slider{
-height:280px;
+height:400px;
 }
 
 }
