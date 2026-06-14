@@ -2,7 +2,7 @@
 // COUNTDOWN
 // =======================
 
-const targetDate = new Date("June 14, 2026 00:00:00").getTime();
+const targetDate = new Date("June 26, 2026 00:00:00").getTime();
 
 const countdownScreen = document.getElementById("countdown-screen");
 const birthdayScreen = document.getElementById("birthday-screen");
