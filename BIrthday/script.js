@@ -82,7 +82,7 @@ enterBtn.addEventListener("click", () => {
 
     const music = document.getElementById("bgMusic");
 
-    music.currentTime = 12;
+    music.currentTime = 19;
 
     music.play().catch(() => {
         console.log("Music autoplay blocked");
